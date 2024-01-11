@@ -13,7 +13,7 @@
 		6BB0B87B2B5047230018EEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB0B87A2B5047230018EEF5 /* Assets.xcassets */; };
 		6BB0B87E2B5047230018EEF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB0B87D2B5047230018EEF5 /* Preview Assets.xcassets */; };
 		6BB0B8812B5047230018EEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB0B87F2B5047230018EEF5 /* LaunchScreen.storyboard */; };
-		6BB0B88C2B5047230018EEF5 /* TDD_BerlinClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B88B2B5047230018EEF5 /* TDD_BerlinClockTests.swift */; };
+		6BB0B88C2B5047230018EEF5 /* BerlinClockModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B88B2B5047230018EEF5 /* BerlinClockModelTests.swift */; };
 		6BB0B8982B5048590018EEF5 /* BerlinClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B8972B5048590018EEF5 /* BerlinClockModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		6BB0B8802B5047230018EEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BB0B8822B5047230018EEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB0B8872B5047230018EEF5 /* TDD-BerlinClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-BerlinClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BB0B88B2B5047230018EEF5 /* TDD_BerlinClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BerlinClockTests.swift; sourceTree = "<group>"; };
+		6BB0B88B2B5047230018EEF5 /* BerlinClockModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockModelTests.swift; sourceTree = "<group>"; };
 		6BB0B88D2B5047230018EEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB0B8972B5048590018EEF5 /* BerlinClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +104,7 @@
 		6BB0B88A2B5047230018EEF5 /* TDD-BerlinClockTests */ = {
 			isa = PBXGroup;
 			children = (
-				6BB0B88B2B5047230018EEF5 /* TDD_BerlinClockTests.swift */,
+				6BB0B88B2B5047230018EEF5 /* BerlinClockModelTests.swift */,
 				6BB0B88D2B5047230018EEF5 /* Info.plist */,
 			);
 			path = "TDD-BerlinClockTests";
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BB0B88C2B5047230018EEF5 /* TDD_BerlinClockTests.swift in Sources */,
+				6BB0B88C2B5047230018EEF5 /* BerlinClockModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
