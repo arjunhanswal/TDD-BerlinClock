@@ -5,11 +5,13 @@ struct BerlinClockModel {
   var secondsLamps: [Bool] = Array(repeating: false, count: 1)
   var topHoursLamps: [Bool] = Array(repeating: false, count: 4)
   var bottomHoursLamps: [Bool] = Array(repeating: false, count: 4)
+  var topMinutesLamps: [Bool] = Array(repeating: false, count: 11)
   
   mutating func updateLamps(for time: DateComponents) {
     updateSecondsLamps(for: time.second ?? 0)
     updateTopHoursLamps(for: time.hour ?? 0)
     updateBottomHoursLamps(for: time.hour ?? 0)
+    updateTopMinutesLamps(for: time.minute ?? 0)
   }
   
   mutating func updateSecondsLamps(for seconds: Int) {
@@ -26,5 +28,10 @@ struct BerlinClockModel {
     // Calculate the remainder when dividing hours by 5 to get the bottom hours
     let bottomHours = hours % 5
     bottomHoursLamps = Array(repeating: true, count: bottomHours) + Array(repeating: false, count: max(0, 4 - bottomHours))
+  }
+  
+  mutating func updateTopMinutesLamps(for minutes: Int) {
+    let topMinutes = minutes / 5
+    topMinutesLamps = Array(repeating: true, count: topMinutes) + Array(repeating: false, count: max(0, 11 - topMinutes))
   }
 }

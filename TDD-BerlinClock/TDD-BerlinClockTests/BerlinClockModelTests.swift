@@ -39,6 +39,15 @@ class BerlinClockModelTests: XCTestCase {
     XCTAssertEqual(model.bottomHoursLamps, [true, false, false, false])
   }
   
+  func testUpdateTopMinuteLamps() {
+    //Act
+    let dateComponents = DateComponents(minute: 34)
+    model.updateLamps(for: dateComponents)
+    
+    //Assert
+    XCTAssertEqual(model.topMinutesLamps, [true, true, true, true, true, true, false, false, false, false, false])
+  }
+  
   override func tearDown() {
     model = nil
     super.tearDown()
