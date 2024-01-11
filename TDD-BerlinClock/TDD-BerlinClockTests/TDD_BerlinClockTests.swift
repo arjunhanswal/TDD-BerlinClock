@@ -28,4 +28,17 @@ class BerlinClockModelTest: XCTestCase {
     XCTAssertEqual(model.topHoursLamps, [true, true, false, false])
     
   }
+  
+  func testUpdateBottomHoursLamps() {
+    //Arrange
+    var model = BerlinClockModel()
+    
+    //Act
+    let dateComponents = DateComponents(hour: 16)
+    model.updateLamps(for: dateComponents)
+    
+    //Assert
+    XCTAssertEqual(model.bottomHoursLamps, [true, false, false, false])
+    
+  }
 }
