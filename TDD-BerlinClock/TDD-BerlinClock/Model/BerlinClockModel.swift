@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct BerlinClockModel {
+struct BerlinClockModel: Equatable {
   var secondsLamps: [Bool] = Array(repeating: false, count: 1)
   var topHoursLamps: [Bool] = Array(repeating: false, count: 4)
   var bottomHoursLamps: [Bool] = Array(repeating: false, count: 4)
