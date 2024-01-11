@@ -17,17 +17,6 @@ struct BerlinClockModel {
   
   mutating func updateTopHoursLamps(for hours: Int) {
     let topHours = (min(4, hours / 5))
-    var updatedTopHoursLamps: [Bool] = []
-    
-    for _ in 0..<topHours {
-      updatedTopHoursLamps.append(true)
-    }
-    
-    for _ in 0..<(4 - topHours) {
-      updatedTopHoursLamps.append(false)
-    }
-    
-    // Assign the updated array to the property
-    topHoursLamps = updatedTopHoursLamps
+    topHoursLamps = Array(repeating: true, count: topHours) + Array(repeating: false, count: max(0, 4 - topHours))
   }
 }
