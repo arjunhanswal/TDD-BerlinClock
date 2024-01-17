@@ -11,15 +11,15 @@ struct BerlinClockView: View {
           .font(.title)
         Text("\(Date())")
         Text("seconds lamp")
-        BerlinClockRow(lamps: $viewModel.berlinClockModel.secondsLamps, color: Color.yellow)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.secondsLamps, color: .berlinYellow)
         
         Text("Hours lamp")
-        BerlinClockRow(lamps: $viewModel.berlinClockModel.topHoursLamps, color: .red)
-        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomHoursLamps, color: .red)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.topHoursLamps, color: .berlinRed)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomHoursLamps, color: .berlinRed)
         
         Text("Minutes lamp")
-        BerlinTopMinutesRow(lamps: $viewModel.berlinClockModel.topMinutesLamps, lampColor: .red)
-        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomMinutesLamps, color: .yellow)
+        BerlinTopMinutesRow(lamps: $viewModel.berlinClockModel.topMinutesLamps, lampColor: .berlinRed)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomMinutesLamps, color: .berlinYellow)
       }
       .padding()
     }

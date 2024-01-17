@@ -8,7 +8,7 @@ struct LampView: View {
   var body: some View {
     
     Rectangle()
-      .frame(width: 30, height: 30)
-      .foregroundColor(isOn ? color : .gray)
+      .frame(width: LampSize.lampWidth, height: LampSize.lampHeight)
+      .foregroundColor(isOn ? color : .berlinGray)
   }
 }

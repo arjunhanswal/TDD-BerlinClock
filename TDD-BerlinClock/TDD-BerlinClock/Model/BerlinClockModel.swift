@@ -7,11 +7,11 @@ enum LampColor {
 }
 
 struct BerlinClockModel: Equatable {
-  var secondsLamps: [Bool] = Array(repeating: false, count: 1)
-  var topHoursLamps: [Bool] = Array(repeating: false, count: 4)
-  var bottomHoursLamps: [Bool] = Array(repeating: false, count: 4)
-  var topMinutesLamps: [Bool] = Array(repeating: false, count: 11)
-  var bottomMinutesLamps: [Bool] = Array(repeating: false, count: 4)
+  var secondsLamps: [Bool] = Array(repeating: false, count: BerlinClockConstants.secondsLampsCount)
+  var topHoursLamps: [Bool] = Array(repeating: false, count: BerlinClockConstants.topHoursLampsCount)
+  var bottomHoursLamps: [Bool] = Array(repeating: false, count: BerlinClockConstants.bottomHoursLampsCount)
+  var topMinutesLamps: [Bool] = Array(repeating: false, count: BerlinClockConstants.topMinutesLampsCount)
+  var bottomMinutesLamps: [Bool] = Array(repeating: false, count: BerlinClockConstants.bottomHoursLampsCount)
   
   mutating func updateLamps(for time: DateComponents) {
     updateSecondsLamps(for: time.second ?? 0)

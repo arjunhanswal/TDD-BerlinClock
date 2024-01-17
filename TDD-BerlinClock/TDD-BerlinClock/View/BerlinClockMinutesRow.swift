@@ -3,7 +3,7 @@ import SwiftUI
 
 struct BerlinTopMinutesRow: View {
   @Binding var lamps: [Bool]
-  var lampColor: LampColor
+  var lampColor: Color
   
   var body: some View {
     HStack(spacing: 5) {
@@ -14,6 +14,6 @@ struct BerlinTopMinutesRow: View {
   }
   
   func lapColor(index: Int) -> Color {
-    ((index + 1 ) % 3 == 0 ? Color.red : Color.yellow)
+    ((index + 1 ) % 3 == 0 ? .berlinRed : .berlinYellow)
   }
 }
