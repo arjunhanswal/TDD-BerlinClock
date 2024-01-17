@@ -6,19 +6,22 @@ struct BerlinClockView: View {
   
   var body: some View {
     VStack(spacing: 10) {
-      Text("Berlin Clock")
-        .font(.title)
-      Text("\(Date())")
-      Text("seconds lamp")
-      BerlinClockRow(lamps: $viewModel.berlinClockModel.secondsLamps)
-      
-      Text("Hours lamp")
-      BerlinClockRow(lamps: $viewModel.berlinClockModel.topHoursLamps)
-      BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomHoursLamps)
-      
-      Text("Minutes lamp")
-      BerlinClockRow(lamps: $viewModel.berlinClockModel.topMinutesLamps)
-      BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomMinutesLamps)
+      VStack(spacing: 10) {
+        Text("Berlin Clock")
+          .font(.title)
+        Text("\(Date())")
+        Text("seconds lamp")
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.secondsLamps, color: Color.yellow)
+        
+        Text("Hours lamp")
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.topHoursLamps, color: .red)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomHoursLamps, color: .red)
+        
+        Text("Minutes lamp")
+        BerlinTopMinutesRow(lamps: $viewModel.berlinClockModel.topMinutesLamps, lampColor: .red)
+        BerlinClockRow(lamps: $viewModel.berlinClockModel.bottomMinutesLamps, color: .yellow)
+      }
+      .padding()
     }
     .padding()
     .onAppear {

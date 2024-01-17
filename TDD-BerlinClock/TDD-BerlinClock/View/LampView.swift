@@ -3,11 +3,12 @@ import SwiftUI
 
 struct LampView: View {
   let isOn: Bool
+  var color: Color
   
   var body: some View {
     
     Rectangle()
-      .frame(width: 20, height: 20)
-      .foregroundColor(isOn ? .yellow : .gray)
+      .frame(width: 30, height: 30)
+      .foregroundColor(isOn ? color : .gray)
   }
 }

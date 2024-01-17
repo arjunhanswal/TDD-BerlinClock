@@ -19,6 +19,7 @@
 		6BB0B89D2B50572F0018EEF5 /* BerlinClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B89C2B50572F0018EEF5 /* BerlinClockViewModel.swift */; };
 		6BB0B8A02B53B4890018EEF5 /* BerlinClockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B89F2B53B4890018EEF5 /* BerlinClockRow.swift */; };
 		6BB0B8A22B53B4B30018EEF5 /* LampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0B8A12B53B4B30018EEF5 /* LampView.swift */; };
+		6BF379EF2B57E11900708D78 /* BerlinClockMinutesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF379EE2B57E11900708D78 /* BerlinClockMinutesRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6BB0B89C2B50572F0018EEF5 /* BerlinClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockViewModel.swift; sourceTree = "<group>"; };
 		6BB0B89F2B53B4890018EEF5 /* BerlinClockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockRow.swift; sourceTree = "<group>"; };
 		6BB0B8A12B53B4B30018EEF5 /* LampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampView.swift; sourceTree = "<group>"; };
+		6BF379EE2B57E11900708D78 /* BerlinClockMinutesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockMinutesRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				6BB0B8782B50471F0018EEF5 /* BerlinClockView.swift */,
 				6BB0B89F2B53B4890018EEF5 /* BerlinClockRow.swift */,
 				6BB0B8A12B53B4B30018EEF5 /* LampView.swift */,
+				6BF379EE2B57E11900708D78 /* BerlinClockMinutesRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				6BB0B8752B50471F0018EEF5 /* AppDelegate.swift in Sources */,
 				6BB0B8A02B53B4890018EEF5 /* BerlinClockRow.swift in Sources */,
 				6BB0B8A22B53B4B30018EEF5 /* LampView.swift in Sources */,
+				6BF379EF2B57E11900708D78 /* BerlinClockMinutesRow.swift in Sources */,
 				6BB0B8772B50471F0018EEF5 /* SceneDelegate.swift in Sources */,
 				6BB0B8982B5048590018EEF5 /* BerlinClockModel.swift in Sources */,
 				6BB0B8792B50471F0018EEF5 /* BerlinClockView.swift in Sources */,

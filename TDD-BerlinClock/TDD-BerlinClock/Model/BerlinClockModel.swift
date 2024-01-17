@@ -1,6 +1,11 @@
 
 import Foundation
 
+enum LampColor {
+  case yellow
+  case red
+}
+
 struct BerlinClockModel: Equatable {
   var secondsLamps: [Bool] = Array(repeating: false, count: 1)
   var topHoursLamps: [Bool] = Array(repeating: false, count: 4)
